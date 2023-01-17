@@ -35,11 +35,13 @@ const IntroductionCard = ({ className }) => {
     <div className={className}>
       <h1>Hey, I'm Mikalojus, a frontend developer</h1>
       <p>I care about this and that.</p>
-      {buttons.map((button) => (
-        <Button key={button.id} variant={button.variant}>
-          {button.title}
-        </Button>
-      ))}
+      <div>
+        {buttons.map((button) => (
+          <Button key={button.id} variant={button.variant}>
+            {button.title}
+          </Button>
+        ))}
+      </div>
     </div>
   );
 };

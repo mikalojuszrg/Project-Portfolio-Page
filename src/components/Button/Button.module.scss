@@ -1,9 +1,15 @@
 .buttonStandard {
   background-color: black;
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  padding: 1rem 1.8rem;
+  border-radius: 2rem;
   border: 0;
+  margin-right: 0.2rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(63, 62, 62);
+  }
 }
 
 .buttonCircle {
@@ -11,4 +17,13 @@
   background-color: white;
   border-radius: 50%;
   border: 0;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(237, 235, 235);
+  }
 }

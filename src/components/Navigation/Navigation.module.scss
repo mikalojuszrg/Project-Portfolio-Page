@@ -5,5 +5,10 @@
 
   &__item {
     list-style: none;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(113, 113, 113);
+    }
   }
 }

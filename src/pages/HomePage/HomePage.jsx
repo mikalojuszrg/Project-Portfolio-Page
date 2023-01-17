@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <>
       <TopBar />
-      <MainSection />
+      <MainSection renderIntroductionCard={true} renderImageCard={true} />
       <Footer />
     </>
   );
