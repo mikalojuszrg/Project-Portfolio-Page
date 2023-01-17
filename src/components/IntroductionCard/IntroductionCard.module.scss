@@ -11,29 +11,21 @@ $grey-gradient: linear-gradient(
 
 $dark-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.3);
 
-.project {
+.card {
   background: $grey-gradient;
   border-radius: 2rem;
   box-shadow: $dark-box-shadow;
-  padding: 2rem;
-  position: relative;
+  padding: 0rem 2rem;
+  width: 75%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 
-  &__image {
-    width: 100%;
-    border-radius: 1rem;
-    margin-top: 1rem;
-  }
-
-  &__title {
-    margin: 0;
-  }
-
-  Button {
-    width: fit-content;
-    position: absolute;
-    top: 1.2rem;
-    right: 1.2rem;
+  &__buttons {
+    Button {
+      font-size: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+    }
   }
 }

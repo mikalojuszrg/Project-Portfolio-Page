@@ -46,9 +46,10 @@ const ProjectPage = () => {
       <section className={styles.project__details}>
         <h1>{project.name}</h1>
         <p>{project.description}</p>
-        <a href={project.github}>Github link</a>
+        <a href={project.github}>Github</a>
       </section>
       <section className={styles.project__images}>
+        {/* <div> */}
         <Button variant="circle" onClick={handleBackImage}>
           <FiArrowLeft />
         </Button>
@@ -56,6 +57,7 @@ const ProjectPage = () => {
         <Button variant="circle" onClick={handleNextImage}>
           <FiArrowRight />
         </Button>
+        {/* </div> */}
       </section>
       <Footer />
     </div>

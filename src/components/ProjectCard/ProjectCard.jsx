@@ -1,15 +1,23 @@
+import { BsArrowUpRight } from "react-icons/bs";
+import Button from "../Button/Button";
 import styles from "./ProjectCard.module.scss";
+import { Link } from "react-router-dom";
 
-const ProjectCard = ({ title, description, image }) => {
+const ProjectCard = ({ name, description, picture1, id }) => {
   return (
     <div className={styles.project}>
+      <h2 className={styles.project__title}>{name}</h2>
+      <p className={styles.project__description}>{description}</p>
       <img
-        src={image}
-        alt="porftoflio works"
+        src={picture1}
+        alt="porftoflio work"
         className={styles.project__image}
       />
-      <h2 className={styles.project__title}>{title}</h2>
-      <p className={styles.project__description}>{description}</p>
+      <Link to={`/projects/${id}`}>
+        <Button variant="circle">
+          <BsArrowUpRight />
+        </Button>
+      </Link>
     </div>
   );
 };
