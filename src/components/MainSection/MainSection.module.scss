@@ -1,3 +1,5 @@
+@import "../../sass/utilities/mixins/media-query.scss";
+
 $grey-gradient: linear-gradient(
   90deg,
   rgba(2, 0, 36, 1) 0%,
@@ -28,6 +30,10 @@ $dark-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.3);
     object-position: 100% 0;
     border-radius: 2rem;
     box-shadow: $dark-box-shadow;
+
+    @include medium {
+      width: 50%;
+    }
   }
 
   &__products {
@@ -36,5 +42,9 @@ $dark-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.3);
     row-gap: 1rem;
     column-gap: 1rem;
     width: 100%;
+
+    @include medium {
+      grid-template-columns: 1fr;
+    }
   }
 }
